@@ -1,1 +1,238 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+        background-color: black;
+        color: #ffe01b;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: rgb(0, 0,0,0.5);
+    border-bottom:1px solid rgba(95, 92, 92, 0.801);
+    position: sticky;
+    top: 0;
+    align-items: center; 
+}
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    padding:10px 20px;
+    color: #ffe01b;
+    float: left;
+    cursor: default;
 
+}
+
+nav ul{ 
+    display: flex;
+    margin: 0;
+    padding: 8 40px;
+    float: right;
+
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffe01b;
+    display: block;
+    margin: auto;
+    transition:0.5s;
+}
+
+nav ul li a{
+    display: block;
+    color: #ffe01b;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+    position: relative;
+}
+nav ul li ::after{
+    content:'';
+    width: 00%;
+    height: 2px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+
+
+nav ul li a:hover{
+    color: white;
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/home.jpg);
+    background-size: cover;
+    margin-left: 8%;
+    margin-top: 15%;
+}
+.home h1{
+   text-align: center;
+    margin: 10px 0;
+    font-weight: 100;
+    font-size: 50px;
+    margin-bottom: 20px;
+    top: 0;
+    padding-top: -50px;
+
+}
+.home p{
+    font-size: 30px;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: -45px;
+    right: 50px;
+
+}
+.images img{
+    height: 200px;
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+
+}
+.images:hover .shape{
+    bottom: 40px;
+}
+.images:hover .image{
+
+    left: 45%;
+}
+
+
+.about{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/activity.jpg);
+    background-size: cover;
+    margin: 0;
+    text-align: center;
+}
+.about h1{
+    text-align: center;
+    padding: 50px 0;
+    margin: 10px 0;
+    font-weight: 100;
+    font-size: 50px;
+}
+.about h5{
+    font-size: 50px;
+    color: #ffe01b;
+}
+.about p{
+    font-size: 40px ;
+    color: #ffe01b    ;
+    flex-basis: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    margin-bottom: 50px;
+    padding: 100px;
+    border-radius: 100%;
+    text-align: center;
+    box-shadow: 0 0 9px;
+}
+
+.activity{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/home.jpg);
+    background-size: cover;
+     
+    text-align: center;
+}
+.activity h1{
+    text-align: center;
+    padding: 50px 0;
+    margin: 10px 0;
+    font-weight: 100;
+    font-size: 50px;
+}
+.row{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px; 
+}
+.col1{
+    flex-basis: 31%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 20px 12px;
+    border-radius: 50px;
+}
+
+.col1 a{
+    text-decoration: none;
+    color: #ffe01b;
+}
+.col1 a:hover{
+    color: white;
+}
+.contact{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/activity.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.contact h1{
+    text-align: center;
+    padding: 50px 0;
+    margin: 10px 0;
+    font-weight: 100;
+    font-size: 50px;
+}
+.row{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px; 
+}
+.col2{
+    flex-basis: 31%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 20px 12px;
+    border-radius: 50px;
+}
+
+.contact a{
+    padding: 0 15px;
+    color: #ffe01b;
+}
+.contact i{
+    font-size: 30px;
+}
+.contact a:hover
+{
+    color: white;
+}
