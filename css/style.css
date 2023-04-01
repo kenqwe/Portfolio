@@ -3,7 +3,7 @@ html{
     
 }
 body{
-        background-color: gray;    
+        background-color: black;    
         color: #ffe01b;
 }
 nav{
@@ -101,6 +101,7 @@ nav ul li a:hover{
     position: absolute;
     bottom: 50px;
     left: 30px;
+   
     
 
 
